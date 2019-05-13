@@ -165,17 +165,61 @@
 
 		if ($numeroA > $numeroB) {
        echo $numeroA;
-		}
-   else {
-		echo $numeroB;
+		} else {
+			echo $numeroB;
 		}
    ?>
 
 	 <?php
 	 	// Ejercicio 2
-	 	$NumeroAleatorio = rand(x,y)
+	 	$numeroAleatorio = rand(1, 5);
 
-	  ?>
+		echo '<br>';
+
+		if($numeroAleatorio == 3 || $numeroAleatorio == 5) {
+			echo 'El numero aleatorio es 3 o 5: <strong>' . $numeroAleatorio . '</strong>';
+		} else {
+			echo 'El numero aleatorio no es 3 ni 5.';
+		}
+
+		echo '<br>';
+
+		if($numeroAleatorio != 3) {
+			echo 'El numero NO es 3';
+		} else {
+			echo $numeroAleatorio;
+		}
+
+		echo '<br>';
+
+		$numeroHastaCien = rand(1, 100);
+
+		if($numeroHastaCien > 50) {
+			echo 'El numero es mayor a 50';
+		} elseif ($numeroHastaCien == 50) {
+			echo 'El numero es 50';
+		} else {
+			echo 'El numero es menor a 50';
+		}
+
+		/****** --- ******* ---- */
+		/* ||   Ejercicio 5   || */
+		/****** --- ******* ---- */
+		echo '<br>';
+		echo '<br>';
+		echo '<br>';
+    echo '<br>';
+
+		$usuario = "admin";
+		$password = "1234";
+
+		if($usuario == 'admin' && $password == "1234") {
+			echo "bienvenido";
+		} else {
+			echo "error en login";
+		}
+
+		?>
 
 
 
