@@ -9,11 +9,13 @@
 
 		<?php
 			// Creo una variable a la que le asigno un valor
-			$user = 'Jane';
+			$user = 'Noe';
+			$cuenta = 23 + 32 * 128;
 
 			/*
 				Imprimo la variable con concatenación
 			*/
+
 			echo '<i>Hola ' . $user . ' ¿cómo estás?</i>';
 		?>
 
@@ -133,5 +135,49 @@
 				echo $num2;
 			}
 		?>
+
+
+		<?php
+		// Ejercicio 1 de la clase 1 de php;
+
+		$persona = [
+			"nombre" => "jon",
+			"apellido" => "snow",
+			"edad" => 27,
+			"hobbies" => ["netflix", "futbol", "programar"]
+		];
+
+		$persona["edad"] = 25; // Cambiar Edad
+		$persona["direccion"] = "Winterfell"; // Agregar elemento nuevo a un Array
+		$persona['hobbies'][] = 'Jujitsu'; // Agregar elemento nuevo a un Array dentro de otro
+
+		echo '<pre>';
+		print_r($persona);
+		echo '</pre>';
+
+		?>
+
+		<?php
+		//Ejercicio 1 de la clase 1 de php CONDICIONALES;
+
+		$numeroA= 77;
+		$numeroB= 15;
+
+		if ($numeroA > $numeroB) {
+       echo $numeroA;
+		}
+   else {
+		echo $numeroB;
+		}
+   ?>
+
+	 <?php
+	 	// Ejercicio 2
+	 	$NumeroAleatorio = rand(x,y)
+
+	  ?>
+
+
+
 	</body>
 </html>
