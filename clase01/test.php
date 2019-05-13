@@ -219,6 +219,41 @@
 			echo "error en login";
 		}
 
+		/****** --- ******* ---- */
+		/* ||   Ejercicio 6   || */
+		/****** --- ******* ---- */
+
+		echo '<br>';
+		echo '<br>';
+		echo '<br>';
+    echo '<br>';
+
+		$edad=25;
+		$casado="false";
+		$sexo="otro";
+		if ($edad >= 18 && $casado == "false" || $sexo == "otro") {
+		echo "bienvenidx";
+    }
+
+		/****** --- ******* ---- */
+		/* ||   Ejercicio 7   || */
+		/****** --- ******* ---- */
+		echo '<br>';
+		echo '<br>';
+		echo '<br>';
+		echo '<br>';
+
+		$cantidadDeAlumnos=-100;
+		if ($cantidadDeAlumnos) {
+		echo "true";
+		}
+		else {
+			echo "false";
+		}
+
+
+
+
 		?>
 
 
